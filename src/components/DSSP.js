@@ -10,7 +10,7 @@ export default class DSSP extends Component{
             refreshing:false,
             data:[],
             page:0,
-            page_size:15
+            page_size:10
         }
     }
      paginate (array, page_size, page_number) {
@@ -48,6 +48,7 @@ export default class DSSP extends Component{
     handleRefresh=()=>{
         this.setState({
             page:1,
+            data:[],
             refreshing:true,
             seed:this.state.seed+1,
         },()=>{
@@ -80,17 +81,16 @@ export default class DSSP extends Component{
                 renderItem={ ({item})  =>
                     <View style={ao.dong}>
                         <Text>{item.id+". "+this.state.page+"/"+item.title}</Text> 
-
                         <Image
                             style={
                                 {
-                                    width:0,
-                                    height:0
+                                    width:50,
+                                    height:50
                                 }
                             }
                         source={
                             {
-                                uri:item.url
+                                uri:"https://picsum.photos/200/300/?random"
                             }
                         }/>
                     </View>
