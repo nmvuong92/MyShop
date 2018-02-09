@@ -25,10 +25,8 @@ export default class App extends Component<Props> {
   render() {
     return (
       
-        <View>
-          <Text>
-            Hhahahaha
-          </Text>
+        <View style={styles.container}>
+            <DSSP/>
         </View>
     
     );
@@ -41,6 +39,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-
+    marginTop:30
+  }
 });
