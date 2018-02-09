@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import DSSP from './src/components/DSSP';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -23,17 +24,13 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native 2!zz
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js 2zz
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
+      
+        <View>
+          <Text>
+            Hhahahaha
+          </Text>
+        </View>
+    
     );
   }
 }
@@ -45,14 +42,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+
 });
