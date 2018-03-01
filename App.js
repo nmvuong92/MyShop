@@ -14,9 +14,9 @@ import {
 import DSSP from './src/components/DSSP';
 
 const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
+  ios: 'HAHAHA Press Cmd+R to reload,\n' +
     'zzz Cmd+D or shake for dev messsnu',
-  android: 'Double tap R on your keyboard to reload,\n' +
+  android: 'HIHIHI Double tap R on your keyboard to reload,\n' +
     'vvvvcShakeccc or press menu button for dev mssssenu',
 });
 
